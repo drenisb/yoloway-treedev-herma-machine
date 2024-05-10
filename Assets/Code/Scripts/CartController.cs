@@ -5,7 +5,7 @@ using System.Linq;
 using Leon.Singleton;
 using UnityEngine;
 
-public class CartController : MonoBehaviour
+public class CartController : SceneSingleton<CartController>
 {
     public static event Action OnAnyAddNewItemToCard;
 

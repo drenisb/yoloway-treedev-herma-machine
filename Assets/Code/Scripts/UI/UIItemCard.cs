@@ -35,6 +35,10 @@ public class UIItemCard : MonoBehaviour
         else if (_parentGroup != null)
             CartController.Instance.ParentGroupList.Remove(_parentGroup);
 
+        _partItem = null;
+        _partsGroup = null;
+        _parentGroup = null;
+
         gameObject.SetActive(false);
     }
 }
